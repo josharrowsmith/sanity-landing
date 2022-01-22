@@ -15,7 +15,10 @@ export default {
         description: 'Add, edit, and reorder sections',
         of: [
           { type: 'hero' },
-          { type: 'cta' }
+          { type: 'cta' },
+          { type: 'ctaColumns'},
+          { type: 'imageGrid'},
+          { type: 'fullWidthImage' }
         ],
       },
     ]

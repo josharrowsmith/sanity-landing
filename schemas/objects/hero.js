@@ -11,7 +11,18 @@ export default {
         name: 'heading',
         type: 'string',
         title: 'Heading'
-      }
+      },
+      {
+        title: 'Desktop Hero Image',
+        name: 'desktopImage',
+        type: 'image'
+      },
+      {
+        title: 'Mobile Hero Image',
+        name: 'mobileImage',
+        type: 'image'
+      },
+
     ],
     preview: {
       select: {
