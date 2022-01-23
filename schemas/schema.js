@@ -13,6 +13,8 @@ import imageGrid from "./objects/imageGrid";
 import fullWidthImage from "./objects/fullWidthImage";
 import stores from "./objects/stores";
 import socials from "./objects/soicals";
+import cta from "./objects/cta";
+import ctaPlug from "./objects/ctaPlug";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,6 +32,8 @@ export default createSchema({
     imageGrid,
     fullWidthImage,
     stores,
-    socials
+    socials,
+    cta,
+    ctaPlug,
   ]),
 });
