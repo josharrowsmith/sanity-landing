@@ -1,40 +1,38 @@
-export default {
-    type: 'object',
-    name: 'hero',
-    title: 'Hero',
-    fields: [
-      {
-        name: 'label',
-        type: 'string'
-      },
-      {
-        name: 'heading',
-        type: 'string',
-        title: 'Heading'
-      },
-      {
-        title: 'Desktop Hero Image',
-        name: 'desktopImage',
-        type: 'image'
-      },
-      {
-        title: 'Mobile Hero Image',
-        name: 'mobileImage',
-        type: 'image'
-      },
+import react from 'react'
 
-    ],
-    preview: {
-      select: {
-        title: 'heading',
-        subtitle: 'label',
-        disabled: 'disabled'
-      },
-      prepare({ title, disabled }) {
-        return {
-          title: `Hero: ${disabled ? 'DISABLED' : title}`
-        }
-      }
-    }
-  }
-  
+export default {
+  type: 'object',
+  name: 'hero',
+  title: 'Hero',
+  fields: [
+    {
+      name: 'heading',
+      type: 'string',
+      title: 'Heading'
+    },
+    {
+      title: 'Desktop Hero Image',
+      name: 'desktopImage',
+      type: 'blockImage'
+    },
+    {
+      title: 'Mobile Hero Image',
+      name: 'mobileImage',
+      type: 'blockImage'
+    },
+
+  ],
+  preview: {
+    select: {
+      title: 'Hero',
+      imageUrl: 'mobileImage.blockImage.asset.url'
+    },
+    prepare: ({ title = 'Please Select An Image', imageUrl }) => ({
+      title,
+      media: imageUrl ? (
+        <img style={{ objectFit: 'cover', objectPosition: 'right' }} src={imageUrl} alt="Hero" />
+      ) : undefined,
+      subtitle: 'Hero Image'
+    }),
+  },
+}

@@ -12,7 +12,7 @@ export default {
   preview: {
     prepare() {
       return {
-        title: `Stores columns`,
+        title: `Stores Block`,
       };
     },
   },

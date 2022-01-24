@@ -6,15 +6,15 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import page from "./documents/page";
 import siteSettings from "./documents/siteSettings";
 import hero from "./objects/hero";
-import mainImage from "./objects/mainImage";
-import simpleBlockContent from "./objects/simpleBlockContent";
+import blockImage from "./objects/blockImage";
+import blockContent from "./objects/blockContent";
 import openGraph from "./objects/openGraph";
 import imageGrid from "./objects/imageGrid";
-import fullWidthImage from "./objects/fullWidthImage";
-import stores from "./objects/stores";
-import socials from "./objects/soicals";
+import heroBanner from "./objects/heroBanner";
 import cta from "./objects/cta";
 import ctaPlug from "./objects/ctaPlug";
+import socials from "./objects/socials";
+import stores from "./objects/stores"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -26,14 +26,14 @@ export default createSchema({
     page,
     siteSettings,
     hero,
-    mainImage,
-    simpleBlockContent,
+    blockImage,
+    blockContent,
     openGraph,
     imageGrid,
-    fullWidthImage,
-    stores,
-    socials,
+    heroBanner,
     cta,
     ctaPlug,
+    socials,
+    stores
   ]),
 });

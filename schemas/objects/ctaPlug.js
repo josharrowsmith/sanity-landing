@@ -8,7 +8,7 @@ export default {
       type: "string",
       title: "Title",
     },
-    { name: "image", type: "mainImage" },
+    { name: "image", type: "blockImage" },
     {
       name: "cta",
       type: "cta",
@@ -21,7 +21,7 @@ export default {
     },
     prepare({ title, subtitle }) {
       return {
-        title: `Call to action: ${title || "Title not set"}`,
+        title: `${title || "Title not set"}`,
         subtitle,
       };
     },

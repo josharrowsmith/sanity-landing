@@ -1,5 +1,5 @@
 export default {
-  name: "mainImage",
+  name: "blockImage",
   type: "image",
   title: "Image",
   options: {

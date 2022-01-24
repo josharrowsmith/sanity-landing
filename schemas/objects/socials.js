@@ -6,13 +6,13 @@ export default {
     {
       type: "array",
       name: "columns",
-      of: [{ type: "mainImage" }],
+      of: [{ type: "ctaPlug" }],
     },
   ],
   preview: {
     prepare() {
       return {
-        title: `Socials Grid`,
+        title: `Socials Block`,
       };
     },
   },

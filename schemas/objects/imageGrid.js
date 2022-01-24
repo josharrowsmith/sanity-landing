@@ -1,24 +1,22 @@
 export default {
   type: "object",
   name: "imageGrid",
-  title: "Image Grid",
-  validation: (Rule) =>
-    Rule.custom((fields) => {
-      if (Math.abs(fields.columns.length % 2) == 1)
-        return "Must have a even amount of columns";
-      return true;
-    }),
+  title: "Grid",
   fields: [
     {
       type: "array",
       name: "columns",
-      of: [{ type: "mainImage" }],
+      of: [{ type: "ctaPlug" }],
     },
+    {
+      type: 'boolean',
+      name: 'disabled'
+    }
   ],
   preview: {
     prepare() {
       return {
-        title: `Image Grid`,
+        title: `Image Block`,
       };
     },
   },
