@@ -4,6 +4,10 @@ export default {
   title: "Call to action",
   fields: [
     {
+      type: 'boolean',
+      name: 'disabled'
+    },
+    {
       name: "title",
       type: "string",
       title: "Title",
