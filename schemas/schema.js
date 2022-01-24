@@ -10,7 +10,7 @@ import blockImage from "./objects/blockImage";
 import blockContent from "./objects/blockContent";
 import openGraph from "./objects/openGraph";
 import imageGrid from "./objects/imageGrid";
-import heroBanner from "./objects/heroBanner";
+import bottomBanner from "./objects/bottomBanner";
 import cta from "./objects/cta";
 import ctaPlug from "./objects/ctaPlug";
 import socials from "./objects/socials";
@@ -30,7 +30,7 @@ export default createSchema({
     blockContent,
     openGraph,
     imageGrid,
-    heroBanner,
+    bottomBanner,
     cta,
     ctaPlug,
     socials,

@@ -1,14 +1,14 @@
 export default {
   type: 'object',
-  name: 'heroBanner',
-  title: 'Hero Banner',
+  name: 'bottomBanner',
+  title: 'Bottom Banner',
   fields: [
     {
-      name: 'backgroundImage',
+      name: 'desktopImage',
       type: 'blockImage'
     },
     {
-      name: 'backgroundImageMobile',
+      name: 'mobileImage',
       type: 'blockImage'
     },
     {
@@ -18,15 +18,15 @@ export default {
   ],
   preview: {
     select: {
-      title: 'Hero Banner',
-      imageUrl: 'backgroundImage.blockImage.asset.url'
+      title: 'Bottom Banner',
+      imageUrl: 'mobileImage.blockImage.image.asset.url'
     },
     prepare: ({ title = 'Please Select An Image', imageUrl }) => ({
       title,
       media: imageUrl ? (
-        <img style={{ objectFit: 'cover', objectPosition: 'right' }} src={imageUrl} alt={"Hero Image"} />
+        <img style={{ objectFit: 'cover', objectPosition: 'right' }} src={imageUrl} alt={"Bottom Banner Image"} />
       ) : undefined,
-      subtitle: 'Banner Image'
+      subtitle: 'Bottom Banner Image'
     }),
   },
 }

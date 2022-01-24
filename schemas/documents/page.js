@@ -15,7 +15,7 @@ export default {
       description: "Add, edit, and reorder sections",
       of: [
         { type: "hero", title: "Hero Image" },
-        { type: "heroBanner", title: "Hero Banner" },
+        { type: "bottomBanner", title: "Bottom Banner" },
         { type: "imageGrid", title: "Image Block" },
         { type: "socials", title: "Socials Block" },
         { type: "stores", title: "Stores Block" }
